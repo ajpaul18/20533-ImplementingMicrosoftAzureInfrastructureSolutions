@@ -1,0 +1,28 @@
+* Special Modules for the course need to be copied to E:\  (specify whatever location / path)
+* To get these modules, connect to Github.com and search for 20533
+		Open the first link on the page (MicrosoftLearning/20533-ImplementingMicrosoftAzureInfrastructureSolutions)
+			Click on the GREEN "Clone or download button" --> DOWNLOAD ZIP
+			The downloaded files must be extracted with 7-zip as it handles long names / folder paths better.
+
+Once extracted - Open the Allfiles folder and copy all four folders to the E:\  --> E:\Modules
+	This path needs to be specified in the PSModulePath variable:
+		System --> Advanced System settings --> Environment Variables --> Path --> PSModulePath --> E:\Modules
+
+* To install the PowerShell module the following was done:
+		uninstall-module AzureRM
+		Install-Module AzureRM -allowclobber
+		Import-Module -name AzureRM -force
+
+Reboot for environmental variables to take effect.
+
+Follow the lab steps via GitHub:
+	20533E- MicrosoftLearning/20533-ImplementingMicrosoftAzureInfrastructureSolutions - Instructions --> e.g. 20533E_LAB_AK_01.md
+
+Use EastUS for all labs
+Use Standard_D1_v2 for all labs except Module 7, where you use Standard_D4_v2
+
+
+
+add-20533Eenvironment 
+
+remove-20533Eenvironment
